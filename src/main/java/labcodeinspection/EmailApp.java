@@ -3,7 +3,19 @@ package labcodeinspection;
 import java.util.Scanner;
 
 public class EmailApp {
+	
+	/**
+	* 
+	*
+	* @author Juanito Alimaña
+	*/
+	private EmailApp() {}
 
+	/**
+	* 
+	*
+	* @author Juanito Alimaña
+	*/
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
