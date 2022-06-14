@@ -48,4 +48,33 @@ public class Email {
 		this.email = this.m_firstName.toLowerCase() + this.m_lastName.toLowerCase() + "@" + this.department
 				+ ".espol.edu.ec";
 	}
+
+	public String getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	public int getDefaultpasswordLength() {
+		return defaultpasswordLength;
+	}
+
+	public void setDefaultpasswordLength(int defaultpasswordLength) {
+		this.defaultpasswordLength = defaultpasswordLength;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	
+
+	
+	
 }
