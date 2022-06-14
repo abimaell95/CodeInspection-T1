@@ -1,5 +1,7 @@
 package labcodeinspection;
 
+import java.util.Locale;
+
 public class Email {
 
 	private String m_firstName;
@@ -45,7 +47,7 @@ public class Email {
 
 	public void generateEmail() {
 		this.password = this.randomPassword(this.defaultpasswordLength);
-		this.email = this.m_firstName.toLowerCase() + this.m_lastName.toLowerCase() + "@" + this.department
+		this.email = this.m_firstName.toLowerCase(Locale.US) + this.m_lastName.toLowerCase(Locale.US) + "@" + this.department
 				+ ".espol.edu.ec";
 	}
 
@@ -72,19 +74,35 @@ public class Email {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
+	
+	/**
+	 * 
+	 * @return
+	 */
 	public String getM_firstName() {
 		return m_firstName;
 	}
 
+	/**
+	 * 
+	 * @param m_firstName
+	 */
 	public void setM_firstName(String m_firstName) {
 		this.m_firstName = m_firstName;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getM_lastName() {
 		return m_lastName;
 	}
 
+	/**
+	 * 
+	 * @param m_lastName
+	 */
 	public void setM_lastName(String m_lastName) {
 		this.m_lastName = m_lastName;
 	}
